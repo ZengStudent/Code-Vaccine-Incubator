@@ -1,0 +1,38 @@
+class TestStringMethods(unittest.TestCase):
+        def setUp(self):
+            self.input_data = [4, 8, 11, 12, 13, 14, 17, 17, 21, 21, 22, 22, 24, 29, 32, 34, 35, 36, 36, 37, 41, 41, 45, 50, 56, 58, 59, 59, 60, 61, 62, 67, 67, 69, 70, 70, 75, 75, 78, 80, 90, 91, 91, 94, 94, 96, 96, 97, 98, 98]
+            self.aim = 69
+            self.result = '-'
+            
+            print('--------------Setup--------------')
+
+        def test_tri(self):
+            print('--------------test_tri--------------')
+            try :
+                self.assertEqual(hom.interpolation_search(self.input_data,self.aim),33)
+                print('Pass')
+                self.result='Pass'
+            except AssertionError:
+                print('AssertionError')
+                self.result = 'Fail'
+            except:
+                print('ExceptError')
+                self.result = 'Fail'
+            finally:
+                path = 'AST_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '/'
+                trial_path = path + 'AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '_' + str(trail_numbers) + '/'
+                #  新建資料夾
+                if(os.path.isdir(path) == False):
+                    os.mkdir(path)
+                #  新建資料夾
+                if(os.path.isdir(trial_path) == False):
+                    os.mkdir(trial_path)
+                file_dir = trial_path +'AST_HOM_TestCase_Result_'+str(order)+'.txt'
+                f = open(file_dir, 'w+', encoding='UTF-8')
+                f.write(self.result)
+                f.seek(0)
+                f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+        

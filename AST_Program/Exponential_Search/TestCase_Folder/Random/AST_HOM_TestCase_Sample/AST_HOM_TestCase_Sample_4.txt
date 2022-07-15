@@ -1,0 +1,39 @@
+class TestStringMethods(unittest.TestCase):
+        def setUp(self):
+            self.input_data = [6, 8, 9, 10, 12, 12, 12, 17, 19, 21, 21, 24, 29, 30, 31, 33, 35, 38, 39, 41, 41, 43, 43, 46, 51, 51, 55, 55, 59, 62, 62, 62, 64, 65, 67, 68, 69, 70, 71, 73, 74, 76, 77, 78, 86, 90, 91, 91, 95, 98]
+            self.input_maxlen = 49
+            self.aim = 67
+            self.result = '-'
+            
+            print('--------------Setup--------------')
+
+        def test_tri(self):
+            print('--------------test_tri--------------')
+            try :
+                self.assertEqual(hom.exponentialSearch(self.input_data,self.input_maxlen,self.aim),34)
+                print('Pass')
+                self.result='Pass'
+            except AssertionError:
+                print('AssertionError')
+                self.result = 'Fail'
+            except:
+                print('ExceptError')
+                self.result = 'Fail'
+            finally:
+                path = 'AST_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '/'
+                trial_path = path + 'AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '_' + str(trail_numbers) + '/'
+                #  新建資料夾
+                if(os.path.isdir(path) == False):
+                    os.mkdir(path)
+                #  新建資料夾
+                if(os.path.isdir(trial_path) == False):
+                    os.mkdir(trial_path)
+                file_dir = trial_path +'AST_HOM_TestCase_Result_'+str(order)+'.txt'
+                f = open(file_dir, 'w+', encoding='UTF-8')
+                f.write(self.result)
+                f.seek(0)
+                f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+        

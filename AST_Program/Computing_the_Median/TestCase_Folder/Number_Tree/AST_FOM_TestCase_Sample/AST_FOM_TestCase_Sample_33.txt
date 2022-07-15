@@ -1,0 +1,33 @@
+class TestStringMethods(unittest.TestCase):
+    def setUp(self):
+        self.input_a = [1619, 1630, 1630, 1630, 1630, 1641, 1649, 1649, 1654, 1655, 1655, 1655, 1659, 1663, 1663, 1665, 1665, 1667, 1667, 1667, 1667, 1671, 1671, 1674, 1677, 1677, 1677, 1677, 1677, 1682, 1684, 1694, 1694, 1694, 1694, 1694, 1694, 1704, 1713, 1713, 1713, 1725, 1725, 1728, 1728, 1728, 1728, 1739, 1742, 1753]
+        self.result = '-'
+        
+        print('--------------Setup--------------')
+
+    def test_tri(self):
+        print('--------------test_tri--------------')
+        try :
+            self.assertEqual(amutant.median(self.input_a),1677.0)
+            print('Pass')
+            self.result='Pass'
+        except AssertionError:
+            print('AssertionError')
+            self.result = 'Fail'
+        except:
+            print('ExceptError')
+            self.result = 'Fail'
+        finally:
+            path = 'AST_TestCase_Result_Folder/AST_FOM_TestCase_Result_Folder/AST_FOM_TestCase_Result_Folder_'+ str(folder_numbers) + '/'
+            #  新建資料夾
+            if(os.path.isdir(path) == False):
+                os.mkdir(path)
+            file_dir = path +'AST_FOM_TestCase_Result_'+str(order)+'.txt'
+            f = open(file_dir, 'w+', encoding='UTF-8')
+            f.write(self.result)
+            f.seek(0)
+            f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+    

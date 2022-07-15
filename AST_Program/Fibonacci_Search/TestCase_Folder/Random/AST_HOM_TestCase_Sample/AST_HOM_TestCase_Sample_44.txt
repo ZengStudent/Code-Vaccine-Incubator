@@ -1,0 +1,38 @@
+class TestStringMethods(unittest.TestCase):
+        def setUp(self):
+            self.input_data = [1, 2, 5, 13, 16, 17, 23, 23, 25, 25, 26, 29, 32, 32, 33, 33, 34, 37, 39, 40, 43, 46, 47, 48, 54, 56, 60, 62, 64, 68, 69, 70, 70, 76, 77, 77, 80, 80, 82, 83, 87, 90, 93, 95, 97, 98, 98, 99, 99, 99]
+            self.aim = 48
+            self.result = '-'
+            
+            print('--------------Setup--------------')
+
+        def test_tri(self):
+            print('--------------test_tri--------------')
+            try :
+                self.assertEqual(hom.FibonacciSearch(self.input_data,self.aim),23)
+                print('Pass')
+                self.result='Pass'
+            except AssertionError:
+                print('AssertionError')
+                self.result = 'Fail'
+            except:
+                print('ExceptError')
+                self.result = 'Fail'
+            finally:
+                path = 'AST_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '/'
+                trial_path = path + 'AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '_' + str(trail_numbers) + '/'
+                #  新建資料夾
+                if(os.path.isdir(path) == False):
+                    os.mkdir(path)
+                #  新建資料夾
+                if(os.path.isdir(trial_path) == False):
+                    os.mkdir(trial_path)
+                file_dir = trial_path +'AST_HOM_TestCase_Result_'+str(order)+'.txt'
+                f = open(file_dir, 'w+', encoding='UTF-8')
+                f.write(self.result)
+                f.seek(0)
+                f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+        

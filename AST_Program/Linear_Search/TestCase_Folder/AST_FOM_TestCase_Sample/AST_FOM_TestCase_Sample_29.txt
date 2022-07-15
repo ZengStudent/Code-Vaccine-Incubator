@@ -1,0 +1,34 @@
+class TestStringMethods(unittest.TestCase):
+    def setUp(self):
+        self.input_data = [1, 3, 7, 11, 14, 21, 23, 23, 27, 27, 28, 30, 33, 34, 34, 35, 40, 41, 42, 45, 46, 49, 50, 52, 55, 57, 57, 60, 62, 62, 65, 70, 70, 71, 72, 76, 78, 79, 79, 79, 84, 89, 91, 92, 92, 92, 93, 93, 96, 100]
+        self.aim = 27
+        self.result = '-'
+        
+        print('--------------Setup--------------')
+
+    def test_tri(self):
+        print('--------------test_tri--------------')
+        try :
+            self.assertEqual(amutant.linear_search(self.input_data,self.input_start,self.input_maxlen,self.aim),8)
+            print('Pass')
+            self.result='Pass'
+        except AssertionError:
+            print('AssertionError')
+            self.result = 'Fail'
+        except:
+            print('ExceptError')
+            self.result = 'Fail'
+        finally:
+            path = 'AST_TestCase_Result_Folder/AST_FOM_TestCase_Result_Folder/AST_FOM_TestCase_Result_Folder_'+ str(folder_numbers) + '/'
+            #  新建資料夾
+            if(os.path.isdir(path) == False):
+                os.mkdir(path)
+            file_dir = path +'AST_FOM_TestCase_Result_'+str(order)+'.txt'
+            f = open(file_dir, 'w+', encoding='UTF-8')
+            f.write(self.result)
+            f.seek(0)
+            f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+    

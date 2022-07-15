@@ -1,0 +1,37 @@
+class TestStringMethods(unittest.TestCase):
+        def setUp(self):
+            self.input_a = [913, -930, -101, 379, -100, -421, 260, 954, 204, -968, -757, -139, 446, 806, -648, 604, 105, -497, -94, 677, 780, -740, 527, -524, -248, 854, -991, -989, 662, 573, 14, -787, 517, 959, -155, 362, 272, 292, -805, 610, 504, -397, 630, -597, -472, -693, 590, -223, 717, 848]
+            self.result = '-'
+            
+            print('--------------Setup--------------')
+
+        def test_tri(self):
+            print('--------------test_tri--------------')
+            try :
+                self.assertEqual(hom.bubble_sort(self.input_a),[-991, -989, -968, -930, -805, -787, -757, -740, -693, -648, -597, -524, -497, -472, -421, -397, -248, -223, -155, -139, -101, -100, -94, 14, 105, 204, 260, 272, 292, 362, 379, 446, 504, 517, 527, 573, 590, 604, 610, 630, 662, 677, 717, 780, 806, 848, 854, 913, 954, 959])
+                print('Pass')
+                self.result='Pass'
+            except AssertionError:
+                print('AssertionError')
+                self.result = 'Fail'
+            except:
+                print('ExceptError')
+                self.result = 'Fail'
+            finally:
+                path = 'AST_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '/'
+                trial_path = path + 'AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '_' + str(trail_numbers) + '/'
+                #  新建資料夾
+                if(os.path.isdir(path) == False):
+                    os.mkdir(path)
+                #  新建資料夾
+                if(os.path.isdir(trial_path) == False):
+                    os.mkdir(trial_path)
+                file_dir = trial_path +'AST_HOM_TestCase_Result_'+str(order)+'.txt'
+                f = open(file_dir, 'w+', encoding='UTF-8')
+                f.write(self.result)
+                f.seek(0)
+                f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+        

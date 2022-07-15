@@ -1,0 +1,37 @@
+class TestStringMethods(unittest.TestCase):
+        def setUp(self):
+            self.input_a = [-282, -420, -999, -542, -204, -978, 523, 581, -630, 90, 623, -788, 127, -747, 214, -572, -191, 493, 419, -299, -724, -537, -57, -776, -574, -903, 516, -293, -15, 828, -289, 176, -769, -348, 901, 141, 601, -966, -791, -56, 170, -57, 211, -65, -888, 871, -658, -264, -687, -373]
+            self.result = '-'
+            
+            print('--------------Setup--------------')
+
+        def test_tri(self):
+            print('--------------test_tri--------------')
+            try :
+                self.assertEqual(hom.quick_sort(self.input_a),[-999, -978, -966, -903, -888, -791, -788, -776, -769, -747, -724, -687, -658, -630, -574, -572, -542, -537, -420, -373, -348, -299, -293, -289, -282, -264, -204, -191, -65, -57, -57, -56, -15, 90, 127, 141, 170, 176, 211, 214, 419, 493, 516, 523, 581, 601, 623, 828, 871, 901])
+                print('Pass')
+                self.result='Pass'
+            except AssertionError:
+                print('AssertionError')
+                self.result = 'Fail'
+            except:
+                print('ExceptError')
+                self.result = 'Fail'
+            finally:
+                path = 'AST_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '/'
+                trial_path = path + 'AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '_' + str(trail_numbers) + '/'
+                #  新建資料夾
+                if(os.path.isdir(path) == False):
+                    os.mkdir(path)
+                #  新建資料夾
+                if(os.path.isdir(trial_path) == False):
+                    os.mkdir(trial_path)
+                file_dir = trial_path +'AST_HOM_TestCase_Result_'+str(order)+'.txt'
+                f = open(file_dir, 'w+', encoding='UTF-8')
+                f.write(self.result)
+                f.seek(0)
+                f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+        

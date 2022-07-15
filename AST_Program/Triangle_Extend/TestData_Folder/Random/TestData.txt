@@ -1,0 +1,100 @@
+[112, 33, 393]
+No
+[455, 496, 123]
+Acute Scalane
+[45, 444, 204]
+No
+[120, 205, 475]
+No
+[135, 339, 107]
+No
+[384, 301, 135]
+Acute Scalane
+[470, 331, 80]
+No
+[316, 346, 67]
+Acute Scalane
+[230, 399, 495]
+Obtuse Scalane
+[270, 156, 359]
+Obtuse Scalane
+[39, 309, 187]
+No
+[117, 278, 11]
+No
+[366, 453, 382]
+Acute Scalane
+[286, 247, 105]
+Acute Scalane
+[461, 315, 130]
+No
+[111, 291, 75]
+No
+[200, 232, 196]
+Acute Scalane
+[102, 140, 264]
+No
+[414, 406, 178]
+Acute Scalane
+[207, 174, 252]
+Acute Scalane
+[225, 158, 329]
+Obtuse Scalane
+[200, 418, 208]
+No
+[499, 230, 143]
+No
+[485, 94, 273]
+No
+[39, 441, 244]
+No
+[12, 391, 58]
+No
+[337, 157, 209]
+Acute Scalane
+[41, 116, 283]
+No
+[300, 479, 294]
+Acute Scalane
+[248, 264, 168]
+Acute Scalane
+[375, 48, 34]
+No
+[318, 102, 372]
+Obtuse Scalane
+[251, 142, 482]
+No
+[86, 442, 450]
+Acute Scalane
+[439, 263, 343]
+Acute Scalane
+[362, 448, 168]
+Acute Scalane
+[456, 19, 372]
+No
+[236, 457, 184]
+No
+[370, 65, 196]
+No
+[385, 465, 439]
+Acute Scalane
+[66, 386, 296]
+No
+[372, 286, 347]
+Acute Scalane
+[182, 242, 162]
+Acute Scalane
+[261, 40, 57]
+No
+[271, 397, 238]
+Acute Scalane
+[472, 135, 240]
+No
+[468, 303, 415]
+Acute Scalane
+[247, 299, 114]
+Acute Scalane
+[109, 257, 328]
+Obtuse Scalane
+[256, 203, 235]
+Acute Scalane

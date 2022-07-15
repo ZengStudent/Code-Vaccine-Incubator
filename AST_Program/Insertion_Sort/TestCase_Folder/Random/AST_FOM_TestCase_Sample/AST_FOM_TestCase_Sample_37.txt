@@ -1,0 +1,33 @@
+class TestStringMethods(unittest.TestCase):
+    def setUp(self):
+        self.input_a = [125, 178, 172, 145, 91, 225, 100, 114, 210, 137, 100, 62, 55, 165, 115, 148, 101, 129, 91, 224, 199, 233, 162, 126, 129, 212, 53, 149, 89, 144, 160, 74, 178, 117, 133, 118, 125, 219, 208, 238, 204, 130, 153, 170, 228, 130, 241, 240, 125, 178]
+        self.result = '-'
+        
+        print('--------------Setup--------------')
+
+    def test_tri(self):
+        print('--------------test_tri--------------')
+        try :
+            self.assertEqual(amutant.insertionSort(self.input_a),[53, 55, 62, 74, 89, 91, 91, 100, 100, 101, 114, 115, 117, 118, 125, 125, 125, 126, 129, 129, 130, 130, 133, 137, 144, 145, 148, 149, 153, 160, 162, 165, 170, 172, 178, 178, 178, 199, 204, 208, 210, 212, 219, 224, 225, 228, 233, 238, 240, 241])
+            print('Pass')
+            self.result='Pass'
+        except AssertionError:
+            print('AssertionError')
+            self.result = 'Fail'
+        except:
+            print('ExceptError')
+            self.result = 'Fail'
+        finally:
+            path = 'AST_TestCase_Result_Folder/AST_FOM_TestCase_Result_Folder/AST_FOM_TestCase_Result_Folder_'+ str(folder_numbers) + '/'
+            #  新建資料夾
+            if(os.path.isdir(path) == False):
+                os.mkdir(path)
+            file_dir = path +'AST_FOM_TestCase_Result_'+str(order)+'.txt'
+            f = open(file_dir, 'w+', encoding='UTF-8')
+            f.write(self.result)
+            f.seek(0)
+            f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+    

@@ -1,0 +1,400 @@
+[775, 775, 784]
+Acute Isosceles
+[786, 786, 781]
+Acute Isosceles
+[781, 780, 786]
+Acute Scalane
+[786, 786, 786]
+Equilateral
+[789, 793, 790]
+Acute Scalane
+[790, 795, 795]
+Acute Isosceles
+[802, 802, 802]
+Equilateral
+[802, 797, 803]
+Acute Scalane
+[811, 811, 811]
+Equilateral
+[818, 818, 812]
+Acute Isosceles
+[812, 812, 821]
+Acute Isosceles
+[784, 784, 785]
+Acute Isosceles
+[821, 814, 812]
+Acute Scalane
+[818, 824, 820]
+Acute Scalane
+[828, 838, 838]
+Acute Isosceles
+[835, 835, 843]
+Acute Isosceles
+[839, 829, 839]
+Acute Isosceles
+[839, 842, 844]
+Acute Scalane
+[853, 858, 858]
+Acute Isosceles
+[868, 868, 868]
+Equilateral
+[868, 868, 867]
+Acute Isosceles
+[867, 867, 867]
+Equilateral
+[777, 777, 778]
+Acute Isosceles
+[867, 864, 872]
+Acute Scalane
+[874, 875, 870]
+Acute Scalane
+[875, 872, 878]
+Acute Scalane
+[878, 882, 882]
+Acute Isosceles
+[873, 873, 873]
+Equilateral
+[873, 876, 875]
+Acute Scalane
+[880, 880, 880]
+Equilateral
+[873, 869, 869]
+Acute Isosceles
+[869, 863, 863]
+Acute Isosceles
+[870, 863, 872]
+Acute Scalane
+[774, 774, 774]
+Equilateral
+[875, 876, 886]
+Acute Scalane
+[886, 890, 890]
+Acute Isosceles
+[900, 900, 900]
+Equilateral
+[907, 907, 907]
+Equilateral
+[907, 907, 913]
+Acute Isosceles
+[913, 905, 898]
+Acute Scalane
+[898, 898, 898]
+Equilateral
+[895, 895, 895]
+Equilateral
+[904, 906, 913]
+Acute Scalane
+[913, 908, 901]
+Acute Scalane
+[768, 769, 769]
+Acute Isosceles
+[900, 904, 904]
+Acute Isosceles
+[760, 760, 763]
+Acute Isosceles
+[771, 771, 775]
+Acute Isosceles
+[775, 784, 790]
+Acute Scalane
+[790, 786, 786]
+Acute Isosceles
+[619, 612, 612]
+Acute Isosceles
+[664, 669, 669]
+Acute Isosceles
+[675, 675, 670]
+Acute Isosceles
+[670, 670, 676]
+Acute Isosceles
+[684, 678, 673]
+Acute Scalane
+[665, 665, 666]
+Acute Isosceles
+[664, 654, 654]
+Acute Isosceles
+[654, 661, 661]
+Acute Isosceles
+[661, 661, 661]
+Equilateral
+[661, 668, 674]
+Acute Scalane
+[678, 678, 678]
+Equilateral
+[602, 607, 605]
+Acute Scalane
+[675, 666, 661]
+Acute Scalane
+[660, 664, 664]
+Acute Isosceles
+[659, 653, 653]
+Acute Isosceles
+[653, 650, 654]
+Acute Scalane
+[659, 663, 663]
+Acute Isosceles
+[661, 669, 676]
+Acute Scalane
+[686, 686, 686]
+Equilateral
+[686, 683, 693]
+Acute Scalane
+[693, 703, 703]
+Acute Isosceles
+[705, 698, 706]
+Acute Scalane
+[613, 613, 610]
+Acute Isosceles
+[713, 713, 713]
+Equilateral
+[703, 703, 703]
+Equilateral
+[697, 695, 691]
+Acute Scalane
+[689, 694, 688]
+Acute Scalane
+[691, 691, 701]
+Acute Isosceles
+[701, 691, 700]
+Acute Scalane
+[701, 706, 706]
+Acute Isosceles
+[706, 706, 700]
+Acute Isosceles
+[700, 702, 702]
+Acute Isosceles
+[702, 702, 697]
+Acute Isosceles
+[610, 610, 617]
+Acute Isosceles
+[706, 708, 716]
+Acute Scalane
+[716, 716, 716]
+Equilateral
+[716, 707, 701]
+Acute Scalane
+[701, 696, 701]
+Acute Isosceles
+[695, 685, 694]
+Acute Scalane
+[699, 698, 706]
+Acute Scalane
+[706, 706, 699]
+Acute Isosceles
+[699, 699, 699]
+Equilateral
+[699, 699, 696]
+Acute Isosceles
+[703, 703, 703]
+Equilateral
+[627, 633, 633]
+Acute Isosceles
+[703, 712, 712]
+Acute Isosceles
+[640, 648, 648]
+Acute Isosceles
+[646, 642, 652]
+Acute Scalane
+[652, 652, 657]
+Acute Isosceles
+[662, 664, 664]
+Acute Isosceles
+[808, 807, 811]
+Acute Scalane
+[833, 839, 840]
+Acute Scalane
+[832, 827, 827]
+Acute Isosceles
+[827, 836, 830]
+Acute Scalane
+[830, 835, 835]
+Acute Isosceles
+[835, 842, 849]
+Acute Scalane
+[845, 845, 841]
+Acute Isosceles
+[848, 845, 844]
+Acute Scalane
+[838, 838, 838]
+Equilateral
+[836, 836, 836]
+Equilateral
+[846, 846, 852]
+Acute Isosceles
+[821, 821, 826]
+Acute Isosceles
+[852, 862, 868]
+Acute Scalane
+[878, 886, 893]
+Acute Scalane
+[893, 893, 901]
+Acute Isosceles
+[895, 896, 896]
+Acute Isosceles
+[896, 896, 896]
+Equilateral
+[900, 899, 899]
+Acute Isosceles
+[905, 905, 913]
+Acute Isosceles
+[908, 908, 916]
+Acute Isosceles
+[925, 925, 925]
+Equilateral
+[926, 936, 946]
+Acute Scalane
+[826, 832, 841]
+Acute Scalane
+[946, 946, 954]
+Acute Isosceles
+[954, 959, 967]
+Acute Scalane
+[967, 967, 975]
+Acute Isosceles
+[970, 970, 970]
+Equilateral
+[974, 983, 985]
+Acute Scalane
+[980, 989, 988]
+Acute Scalane
+[988, 986, 989]
+Acute Scalane
+[994, 1002, 993]
+Acute Scalane
+[993, 993, 996]
+Acute Isosceles
+[996, 996, 987]
+Acute Isosceles
+[847, 837, 834]
+Acute Scalane
+[987, 995, 996]
+Acute Scalane
+[996, 989, 986]
+Acute Scalane
+[988, 988, 988]
+Equilateral
+[988, 997, 992]
+Acute Scalane
+[992, 992, 1001]
+Acute Isosceles
+[1001, 1001, 1004]
+Acute Isosceles
+[1004, 1005, 1004]
+Acute Isosceles
+[1001, 1001, 1001]
+Equilateral
+[996, 1003, 1003]
+Acute Isosceles
+[1011, 1020, 1014]
+Acute Scalane
+[830, 831, 823]
+Acute Scalane
+[1014, 1020, 1027]
+Acute Scalane
+[815, 823, 823]
+Acute Isosceles
+[817, 824, 832]
+Acute Scalane
+[832, 832, 824]
+Acute Isosceles
+[824, 823, 833]
+Acute Scalane
+[850, 850, 837]
+Acute Isosceles
+[880, 880, 891]
+Acute Isosceles
+[880, 880, 880]
+Equilateral
+[880, 880, 892]
+Acute Isosceles
+[892, 892, 906]
+Acute Isosceles
+[906, 906, 919]
+Acute Isosceles
+[926, 926, 926]
+Equilateral
+[926, 936, 932]
+Acute Scalane
+[932, 932, 932]
+Equilateral
+[918, 918, 902]
+Acute Isosceles
+[902, 908, 900]
+Acute Scalane
+[837, 837, 848]
+Acute Isosceles
+[895, 895, 895]
+Equilateral
+[900, 909, 901]
+Acute Scalane
+[901, 901, 895]
+Acute Isosceles
+[876, 876, 876]
+Equilateral
+[889, 889, 900]
+Acute Isosceles
+[900, 889, 883]
+Acute Scalane
+[893, 902, 907]
+Acute Scalane
+[920, 929, 929]
+Acute Isosceles
+[942, 942, 950]
+Acute Isosceles
+[937, 923, 923]
+Acute Isosceles
+[836, 835, 844]
+Acute Scalane
+[914, 926, 941]
+Acute Scalane
+[941, 941, 948]
+Acute Isosceles
+[966, 954, 948]
+Acute Scalane
+[938, 938, 949]
+Acute Isosceles
+[940, 950, 950]
+Acute Isosceles
+[962, 962, 962]
+Equilateral
+[976, 967, 967]
+Acute Isosceles
+[986, 995, 995]
+Acute Isosceles
+[1007, 1007, 1007]
+Equilateral
+[1018, 1018, 1018]
+Equilateral
+[844, 844, 844]
+Equilateral
+[1018, 1027, 1027]
+Acute Isosceles
+[1040, 1040, 1040]
+Equilateral
+[1053, 1038, 1038]
+Acute Isosceles
+[1038, 1028, 1028]
+Acute Isosceles
+[1040, 1029, 1029]
+Acute Isosceles
+[1014, 1014, 1030]
+Acute Isosceles
+[1039, 1023, 1023]
+Acute Isosceles
+[1023, 1023, 1031]
+Acute Isosceles
+[1020, 1009, 1009]
+Acute Isosceles
+[1022, 1014, 1026]
+Acute Scalane
+[855, 857, 857]
+Acute Isosceles
+[1027, 1035, 1022]
+Acute Scalane
+[869, 869, 869]
+Equilateral
+[869, 884, 875]
+Acute Scalane
+[875, 883, 883]
+Acute Isosceles
+[894, 904, 892]
+Acute Scalane

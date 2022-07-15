@@ -1,0 +1,37 @@
+class TestStringMethods(unittest.TestCase):
+        def setUp(self):
+            self.input_a = [172, -71, -90, -624, 331, 446, -475, -148, -313, -252, 914, 636, -398, -180, 677, 267, 709, -337, 329, -595, -655, -400, -494, 809, -634, 119, -807, -340, -439, 123, 902, 294, -708, -456, -510, -633, 745, -640, -453, 321, -498, -881, -244, -405, -876, -716, -910, -287, -944, -238]
+            self.result = '-'
+            
+            print('--------------Setup--------------')
+
+        def test_tri(self):
+            print('--------------test_tri--------------')
+            try :
+                self.assertEqual(hom.quick_sort(self.input_a),[-944, -910, -881, -876, -807, -716, -708, -655, -640, -634, -633, -624, -595, -510, -498, -494, -475, -456, -453, -439, -405, -400, -398, -340, -337, -313, -287, -252, -244, -238, -180, -148, -90, -71, 119, 123, 172, 267, 294, 321, 329, 331, 446, 636, 677, 709, 745, 809, 902, 914])
+                print('Pass')
+                self.result='Pass'
+            except AssertionError:
+                print('AssertionError')
+                self.result = 'Fail'
+            except:
+                print('ExceptError')
+                self.result = 'Fail'
+            finally:
+                path = 'AST_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder/AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '/'
+                trial_path = path + 'AST_HOM_TestCase_Result_Folder_' + str(folder_numbers) + '_' + str(trail_numbers) + '/'
+                #  新建資料夾
+                if(os.path.isdir(path) == False):
+                    os.mkdir(path)
+                #  新建資料夾
+                if(os.path.isdir(trial_path) == False):
+                    os.mkdir(trial_path)
+                file_dir = trial_path +'AST_HOM_TestCase_Result_'+str(order)+'.txt'
+                f = open(file_dir, 'w+', encoding='UTF-8')
+                f.write(self.result)
+                f.seek(0)
+                f.close() 
+
+if __name__ == '__main__':
+    unittest.main()
+        
