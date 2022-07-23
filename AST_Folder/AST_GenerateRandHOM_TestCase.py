@@ -7,7 +7,7 @@ from threading import Timer
 # 宣告變數
 # ====================================================================
 # 資料夾數量(TestCase總數量)
-total_folder_numbers = 50
+total_folder_numbers = 30
 # 組別數量(HOM組別總數量)
 total_trail_numbers = 15
 # 1組HOM的數量

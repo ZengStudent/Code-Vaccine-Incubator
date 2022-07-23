@@ -216,7 +216,7 @@ def write_report(fragility_dict,dir):
 
     return 'Write Report Done.'
 
-# 寫入測試案例的變異分數
+# # 寫入各個測試案例的殺死的 FOM 數量
 def write_testcase_report(mutationscore_dict,dir):
     # 檔案數量
     file_count = 0
@@ -342,7 +342,7 @@ write_report(FOM_Fragility,report_dir)
 print('......各個測試案例可以殺死的FOM')
 for name,value in testcase_killed_dict.items():
     print(name,'  ', len(value),value,'  ')
-
+# 寫入各個測試案例的殺死的 FOM 數量
 write_testcase_report(testcase_killed_dict,report_dir)
 
 

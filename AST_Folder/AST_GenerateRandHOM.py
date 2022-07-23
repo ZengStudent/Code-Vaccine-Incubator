@@ -10,17 +10,16 @@ from random import sample
 # ------------------------------------------------------------------
 
 source = '''
-def leap(input_year):
-    if (input_year % 4) == 0:
-        if (input_year % 100) == 0:
-            if (input_year % 400) == 0:
-                return True
-            else:
-                return False
-        else:
-            return True
+def fib(input):
+    f0 = 0
+    f1 = 1
+    f2 = 1
+    if(input == 0):
+        return 0
+    elif(input == 1 or input == 2):
+        return 1
     else:
-        return False
+       return fib(input - 1) + fib(input - 2)
 '''
 
 # 可更換的Operator(BinOp)
@@ -53,9 +52,11 @@ FOM_pool_count_max = {'FOM_pool_binop':0,
 
 
 FOM_pool_list = ['BinOp','Compare','UnaryOp']
-FOM_pool_list_count = [3,3,0]
-FOM_pool_binop = [0, 'Add', 1], [1, 'Add', 2], [2, 'Add', 3], [0, 'Sub', 4], [1, 'Sub', 5], [2, 'Sub', 6], [0, 'Mult', 7], [1, 'Mult', 8], [2, 'Mult', 9], [0, 'Div', 10], [1, 'Div', 11], [2, 'Div', 12], [0, 'BitOr', 13], [1, 'BitOr', 14], [2, 'BitOr', 15], [0, 'BitXor', 16], [1, 'BitXor', 17], [2, 'BitXor', 18], [0, 'BitAnd', 19], [1, 'BitAnd', 20], [2, 'BitAnd', 21]
-FOM_pool_compare = [0, 'NotEq', 1, 22], [0, 'NotEq', 2, 23], [0, 'NotEq', 3, 24], [0, 'Lt', 1, 25], [0, 'Lt', 2, 26], [0, 'Lt', 3, 27], [0, 'LtE', 1, 28], [0, 'LtE', 2, 29], [0, 'LtE', 3, 30], [0, 'Gt', 1, 31], [0, 'Gt', 2, 32], [0, 'Gt', 3, 33], [0, 'GtE', 1, 34], [0, 'GtE', 2, 35], [0, 'GtE', 3, 36]
+FOM_pool_list_count = [21,15,0]
+FOM_pool_binop = [[1, 'Add', 1], [2, 'Add', 2], [0, 'Sub', 3], [0, 'Mult', 4], [1, 'Mult', 5], [2, 'Mult', 6], [0, 'Div', 7], [1, 'Div', 8], [2, 'Div', 9], [0, 'Mod', 10], [1, 'Mod', 11], [2, 'Mod', 12], [0, 'BitOr', 13], [1, 'BitOr', 14], [2, 'BitOr', 15], [0, 'BitXor', 16], [1, 'BitXor', 17], [2, 'BitXor', 18], [0, 'BitAnd', 19], [1, 'BitAnd', 20], [2, 'BitAnd', 21]]
+
+FOM_pool_compare = [[0, 'NotEq', 1, 22], [0, 'NotEq', 2, 23], [0, 'NotEq', 3, 24], [0, 'Lt', 1, 25], [0, 'Lt', 2, 26], [0, 'Lt', 3, 27], [0, 'LtE', 1, 28], [0, 'LtE', 2, 29], [0, 'LtE', 3, 30], [0, 'Gt', 1, 31], [0, 'Gt', 2, 32], [0, 'Gt', 3, 33], [0, 'GtE', 1, 34], [0, 'GtE', 2, 35], [0, 'GtE', 3, 36]]
+
 FOM_pool_unaryop = []
 
 
@@ -553,4 +554,4 @@ def do_create_HOM(code,FOM_pool,FOM_pool_count_max,trials,numbers,min_quantity,m
 # --------------------------------------------------------
 # 執行
 # --------------------------------------------------------
-do_create_HOM(source,FOM_pool,FOM_pool_count_max,15,20,2,10)
+do_create_HOM(source,FOM_pool,FOM_pool_count_max,15,20,2,5)

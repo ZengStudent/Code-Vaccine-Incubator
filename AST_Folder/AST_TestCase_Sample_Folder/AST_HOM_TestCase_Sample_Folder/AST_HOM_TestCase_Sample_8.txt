@@ -1,6 +1,6 @@
 class TestStringMethods(unittest.TestCase):
         def setUp(self):
-            self.input_a = 2093
+            self.input_a = 8
             self.result = '-'
             
             print('--------------Setup--------------')
@@ -8,7 +8,7 @@ class TestStringMethods(unittest.TestCase):
         def test_tri(self):
             print('--------------test_tri--------------')
             try :
-                self.assertEqual(hom.leap(self.input_a),False)
+                self.assertEqual(hom.fib(self.input_a),21)
                 print('Pass')
                 self.result='Pass'
             except AssertionError:

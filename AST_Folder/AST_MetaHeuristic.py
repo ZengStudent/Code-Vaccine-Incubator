@@ -26,6 +26,10 @@ HOM_material = {}
 # HOM類別的資料夾路徑
 HOM_classification_dir = 'AST_Mutant_Folder/AST_HOM_Classification_Folder/'
 
+
+# 輸出報告路徑
+report_dir = 'AST_Report_Folder/AST_HOM_Report_Folder/'
+
 # HOM的Name List
 HOM_Name = []
 # HOM的Fragility字典(Name=HOM名稱,Key=Fitness)
@@ -233,6 +237,72 @@ def cal_fitness(hom_killed,fom_material,fom_killed,all_testcase):
     except ZeroDivisionError:
         fit = 0.0
     return fit
+
+
+# 寫入HOM的Fragility
+def write_fragility_report(fragility_dict,dir):
+    # 檔案數量
+    file_count = 0
+    # 計算檔案數量
+    for file_name in os.listdir(dir):
+        file_count = file_count + 1
+
+
+    # Fragility not zero count
+    fra_not_zeor_count = 0
+    # Fragility not zero sum
+    fra_not_zeor_sum = 0.0
+    #'FOM_Report' + str(file_count+1)
+    with open(dir + 'Triangle_Fragility_HOM.txt','w+',encoding='utf-8') as f:
+        for name,value in fragility_dict.items():
+            f.write('{:<15}'.format(name)+'\n')
+        for name, value in fragility_dict.items():
+            f.write('{:<.3f}'.format(value)+'\n')
+            if(value>0.0 and value<1.0):
+                fra_not_zeor_count = fra_not_zeor_count + 1
+                fra_not_zeor_sum = fra_not_zeor_sum + value
+
+        # 包含Equival, Dumb
+        f.write('{:<20}'.format('Average(Non-Trial, Equivalent, Dumb)')+'\n')
+        # 包含Equival, Dumb
+        f.write('{:<.5f}'.format(sum(fragility_dict.values()) / len(fragility_dict.keys()))+'\n')
+        # 不包含Equival, Dumb
+        f.write('{:<20}'.format('Average(Non-Trial)') + '\n')
+        try:
+            # 不包含Equival, Dumb
+            f.write('{:<.5f}'.format((fra_not_zeor_sum / fra_not_zeor_count)) + '\n')
+        except ZeroDivisionError:
+            f.write('{:<.5f}'.format(0) + '\n')
+
+
+    return 'Write Report Done.'
+
+# 寫入HOM的Fitness
+def write_fitness_report(fitness_dict,dir):
+    # 檔案數量
+    file_count = 0
+    # 計算檔案數量
+    for file_name in os.listdir(dir):
+        file_count = file_count + 1
+
+
+    # Fragility not zero count
+    fra_not_zeor_count = 0
+    # Fragility not zero sum
+    fra_not_zeor_sum = 0.0
+    #'FOM_Report' + str(file_count+1)
+    with open(dir + 'Triangle_Fitness_HOM.txt','w+',encoding='utf-8') as f:
+        for name,value in fitness_dict.items():
+            f.write('{:<15}'.format(name)+'\n')
+        for name, value in fitness_dict.items():
+            f.write('{:<.3f}'.format(value)+'\n')
+            if(value>0.0 and value<1.0):
+                fra_not_zeor_count = fra_not_zeor_count + 1
+                fra_not_zeor_sum = fra_not_zeor_sum + value
+    return 'Write Report Done.'
+
+
+
 
 # 搜尋SHOM(undirected search)，(fit_dict:所有HOM的Fitness,fit:目標Fitness)
 def search_SHOM_undirected(fit_dict,fit):
@@ -887,6 +957,10 @@ def do_report(SHOM_len,SSHOM_len,WSHOM_C_len,WSHOM_De_len,NSHOM_len,Equivalent_S
     f_report.close()
 
 
+
+
+
+
 # ====================================================================
 # 執行
 # ====================================================================
@@ -894,7 +968,7 @@ def do_report(SHOM_len,SSHOM_len,WSHOM_C_len,WSHOM_De_len,NSHOM_len,Equivalent_S
 # ----------------------
 # 生成全部的測試案例代號
 # ----------------------
-T = create_testcase_codename(50)
+T = create_testcase_codename(30)
 
 
 # ----------------------
@@ -933,6 +1007,8 @@ for name,value in HOM_killed_testcase.items():
     print()
 
 
+write_fragility_report(HOM_fra,report_dir)
+write_fitness_report(HOM_fit,report_dir)
 
 
 # ----------------------
